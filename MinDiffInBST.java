@@ -4,16 +4,16 @@ class Solution {
     int curr = 100001;
 
     public int minDiffInBST(TreeNode root) {
-        preOrder(root);
+        inOrder(root);
         return ans;
     }
 
-    public void preOrder(TreeNode root) {
+    public void inOrder(TreeNode root) {
         if (root == null) return;
-        preOrder(root.left);
+        inOrder(root.left);
         if (ans > Math.abs(root.val - curr)) ans = Math.abs(root.val - curr);
         curr = root.val;
-        preOrder(root.right);
+        inOrder(root.right);
     }
 
 }
