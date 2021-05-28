@@ -13,7 +13,7 @@
  *     }
  * }
  */
-class Solution {
+class ConstructMaximumBinaryTree {
     public TreeNode constructMaximumBinaryTree(int[] nums) {
         return buildTree(nums, 0, nums.length - 1);
     }
