@@ -1,2 +1,2 @@
 # Algorithm
-主要是记录leetcode题
+Recording my solution of Leetcode problems.
